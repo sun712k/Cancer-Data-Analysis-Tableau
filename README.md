@@ -1,7 +1,5 @@
 ## 📊 Cancer Incidence and Survival Dashboard — Project Notes
 
-### **Motivation**
-
 Reading *Cancer Facts & Figures 2025* from the American Cancer Society inspired me to visualize the data in a more accessible way. While the report contains extensive tables, I wanted to create an interactive dashboard that allows users to explore cancer incidence, death rates, and survival outcomes across states, cancer types, and sexes.
 
 ---
@@ -9,9 +7,13 @@ Reading *Cancer Facts & Figures 2025* from the American Cancer Society inspired 
 ### **Key Questions**
 
 1. **State-level patterns:**
-
+   * Is there a geographical pattern of cancer incidence or death rate?
+     for female, Incidence rates seem to have relatively better outcomes in west coast and westsouthern states such as California, Nevada, Utah, Arizona, and New Mexico, and worst outocmes among north east states. On the other hand, it seems that death rates are dispersed with east inland states having worst death rates from cancer such as Mississippi, Kentucky, West Virginia, Oklahoma.
+     for male, The patterns are more distinct: incidence rates are better in west coast from Oregon to New Mexico and colorado. Death rates are worst narrowly focused on east inland states like Mississippi, Kentucky, Oklahoma. 
    * Do states with high cancer incidence also experience higher cancer death rates?
+     Mortality-to-Incidence ratio shows that states have around 16~22% death out of incidence. Whether the top and bottom states different significantly, we need to test, which requires knowing SEs or CIs to run formal hypothesis tests. With just the Cancer Facts & Figures tables (which are summary rates), you can’t run significance tests.  it remains for further analysis. 
    * If not, could differences in healthcare access and treatment quality explain the gap?
+     Top 5 states with the highest death rates overlap with the 5 worst health system except Kentucky(bottom #13)
 
 2. **Sex-based differences:**
 
