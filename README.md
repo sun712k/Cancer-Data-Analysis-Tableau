@@ -1,66 +1,53 @@
-## 📊 Cancer Incidence and Survival Dashboard — Project Notes
 
-Reading *Cancer Facts & Figures 2025* from the American Cancer Society inspired me to visualize the data in a more accessible way. While the report contains extensive tables, I wanted to create an interactive dashboard that allows users to explore cancer incidence, death rates, and survival outcomes across states, cancer types, and sexes.
+# 📊 Cancer Incidence and Survival Dashboard — Project Notes
 
----
-
-### **Key Questions**
-
-1. **State-level patterns:**
-   * Is there a geographical pattern of cancer incidence or death rate?
-     for female, Incidence rates seem to have relatively better outcomes in west coast and westsouthern states such as California, Nevada, Utah, Arizona, and New Mexico, and worst outocmes among north east states. On the other hand, it seems that death rates are dispersed with east inland states having worst death rates from cancer such as Mississippi, Kentucky, West Virginia, Oklahoma.
-     for male, The patterns are more distinct: incidence rates are better in west coast from Oregon to New Mexico and colorado. Death rates are worst narrowly focused on east inland states like Mississippi, Kentucky, Oklahoma. 
-   ** Do states with high cancer incidence also experience higher cancer death rates?
-     For better comparison, I created Mortality-to-Incidence ratio with two data tables as a proxy for survival/healthcare access quality. 
-     Mortality-to-Incidence ratio shows that states have around 16~22% death out of incidence. Whether the top and bottom states different significantly, we need to test, which requires knowing SEs or CIs to run formal hypothesis tests. With just the Cancer Facts & Figures tables (which are summary rates), you can’t run significance tests.  it remains for further analysis. 
-   * If not, could differences in healthcare access and treatment quality explain the gap?
-     Top 5 states with the highest death rates overlap with the 5 worst health system except Kentucky(bottom #13)
-
-2. **Sex-based differences:**
-
-   * Since incidence and death rates (Tables 3 & 4) are recorded separately by sex, how do male and female rates compare?
-   * Are there cancers where disparities between sexes are especially pronounced?
-
-3. **Survival progress:**
-
-   * Have survival rates improved consistently across all cancer types?
-   * Which cancers have seen the greatest gains, and which have lagged behind?
-
-4. **Geographic risk factors:**
-
-   * Is skin cancer more prevalent in sunny states?
-   * How do new melanoma case rates compare across different regions when adjusted for population?
+Inspired by *Cancer Facts & Figures 2025* from the American Cancer Society, I developed an interactive dashboard to make complex cancer statistics more accessible. While the report presents detailed tables, my goal was to create a tool that enables users to explore cancer incidence, mortality, and survival outcomes across states, cancer types, and sexes.
 
 ---
 
-### **Data & Method**
+### **Key Questions and Findings**
 
-* **Source:** *Cancer Facts & Figures 2025*, American Cancer Society (Tables 3, 4, and 5 for incidence and death rates; survival data by cancer type).
-* **Tools:** Tableau for visualization; Excel for data preparation.
-* **Approach:** Combined incidence, death, survival, and sex-specific datasets into an interactive map and charts, enabling comparisons by state, sex, and cancer type.
+**1. Are there geographical patterns in cancer incidence and death rates?**
 
----
+* **Female:** Incidence rates are generally lower in western and southwestern states (California, Nevada, Utah, Arizona, New Mexico) and higher in northeastern states. Death rates appear more dispersed but are particularly high in east–inland states such as Mississippi, Kentucky, West Virginia, and Oklahoma.
+* **Male:** Patterns are clearer: incidence rates are lower in western states from Oregon through New Mexico and Colorado, while death rates are concentrated in east–inland states like Mississippi, Kentucky, and Oklahoma.
 
-### **Insights**
+**2. Do states with high cancer incidence also experience higher death rates?**
+Yes. A correlation test shows a very strong relationship (Pearson correlation = **0.963**, p < 0.001). States with higher incidence tend to also have higher death rates.
 
-* **Incidence ≠ Death:** Not all cancers with high incidence correspond to high death rates. For example, prostate cancer is common but has a relatively low mortality rate compared to lung cancer, highlighting differences in early detection and treatment.
-* **Sex disparities:** Male incidence and death rates are generally higher than female rates for several cancers, but not all. This suggests biological, behavioral, and healthcare access factors may play a role.
-* **Survival improvements:** Since the 1970s, survival has improved for nearly all cancers, with some cancers showing dramatic progress (e.g., breast cancer, leukemia), while others like pancreatic cancer have seen slower gains.
-* **Geographic disparities:** Preliminary patterns suggest that melanoma rates are indeed higher in sunnier states, consistent with known risk factors like UV exposure.
+**3. Does the Mortality-to-Incidence Ratio (MIR) differ significantly across states?**
+MIR was calculated as a proxy for survival.
+
+* **Range:** \~28–42% for males, \~25–35% for females (males have consistently higher MIR).
+* **Statistical test:** Comparing the top 10 and bottom 10 states, both sexes showed highly significant differences (Female: *t* = 14.916, Male: *t* = 15.022, both p < 0.001).
+
+**4. Does MIR reflect healthcare quality?**
+Using the *2025 Scorecard on State Health System Performance* (Commonwealth Fund), I tested the correlation between MIR and healthcare rankings.
+
+* **Females:** Spearman ρ = **0.706**, p < 0.001 → strong positive correlation.
+* **Males:** Spearman ρ = **0.550**, p < 0.001 → moderate-to-strong correlation.
+* **Interpretation:** In states with poorer healthcare system performance (higher ranking score), MIR is higher. The association is stronger for females, suggesting female outcomes may be more sensitive to healthcare quality.
+
+**5. Have 5-year survival rates improved consistently across cancer types?**
+Overall survival has improved substantially: a **41% relative increase** over recent decades. However, gains vary by cancer type.
+
+**6. Which cancers have seen the greatest and least improvements?**
+
+* **Greatest gains:** Lung & bronchus cancer, despite still having the lowest survival rates, has shown the largest relative improvement.
+* **Least gains:** Breast cancer survival remains high (91%) but has seen the smallest relative improvement. Prostate cancer has the highest survival (97%).
 
 ---
 
 ### **Future Considerations**
 
-* Integrate socioeconomic and healthcare access data (e.g., insurance coverage, rural vs. urban) to better understand disparities.
-* Expand sex-based analysis to highlight public health priorities where one sex is disproportionately affected.
-* Track survival rate improvements over time with longitudinal visualizations.
-* Add prevention and screening statistics to provide a fuller picture of progress.
+* Integrate socioeconomic and healthcare access variables (e.g., insurance coverage, rural vs. urban) to better explain disparities.
+* Expand sex-specific analyses to highlight public health priorities.
+* Track survival trends longitudinally to capture progress over time.
+* Add prevention and screening data for a fuller picture of outcomes.
 
 ---
 
 ### **Takeaway**
 
-This project demonstrates how public health data can be translated into interactive visual insights. By connecting incidence, mortality, sex differences, and survival trends, the dashboard can help researchers, policymakers, and the public better understand progress in cancer outcomes and identify where efforts should be focused next.
-
+This project shows how public health data can be transformed into interactive insights. By connecting incidence, mortality, MIR, healthcare quality, and survival trends, the dashboard highlights both progress and disparities. These findings can support researchers, policymakers, and the public in targeting efforts to reduce cancer burden and improve outcomes.
 
