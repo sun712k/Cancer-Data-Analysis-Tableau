@@ -2,7 +2,7 @@
 # 📊 Cancer Incidence and Survival Dashboard — Project Notes
 
 Inspired by *[Cancer Facts & Figures 2025](https://www.cancer.org/research/cancer-facts-statistics/all-cancer-facts-figures/2025-cancer-facts-figures.html)* from the American Cancer Society, I developed an interactive dashboard to make complex cancer statistics more accessible. While the report presents detailed tables, my goal was to create a tool that enables users to explore cancer incidence, mortality, and survival outcomes across states, cancer types, and sexes.
-<img width="807" height="191" alt="Pasted Graphic" src="https://github.com/user-attachments/assets/b2d9b4be-8089-4240-8362-fae8735131fc" />
+<img width="500" height="100" alt="Pasted Graphic" src="https://github.com/user-attachments/assets/b2d9b4be-8089-4240-8362-fae8735131fc" />
 
 ---
 
@@ -25,7 +25,7 @@ MIR was calculated as a proxy for survival.
 <img width="455" height="350" alt="image" src="https://github.com/user-attachments/assets/9a1aaf67-fbd3-4912-b950-f2cd3a04839b" />
 
 **4. Does MIR reflect healthcare quality?**
-Using the *2025 Scorecard on State Health System Performance* (Commonwealth Fund), I tested the correlation between MIR and healthcare rankings.
+Using the *[2025 Scorecard on State Health System Performance](https://www.commonwealthfund.org/publications/scorecard/2025/jun/2025-scorecard-state-health-system-performance)* (Commonwealth Fund), I tested the correlation between MIR and healthcare rankings.
 
 * **Females:** Spearman ρ = **0.706**, p < 0.001 → strong positive correlation.
 * **Males:** Spearman ρ = **0.550**, p < 0.001 → moderate-to-strong correlation.
