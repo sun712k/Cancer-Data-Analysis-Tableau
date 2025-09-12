@@ -1,12 +1,12 @@
 
 # 📊 Cancer Incidence and Survival Dashboard — Project Notes
 
-Inspired by *[Cancer Facts & Figures 2025](https://www.cancer.org/research/cancer-facts-statistics/all-cancer-facts-figures/2025-cancer-facts-figures.html)* from the American Cancer Society, I developed an interactive dashboard to make complex cancer statistics more accessible. While the report presents detailed tables, my goal was to create a tool that enables users to explore cancer incidence, mortality, and survival outcomes across states, cancer types, and sexes.
+Inspired by *[Cancer Facts & Figures 2025](https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2025/2025-cancer-facts-and-figures-acs.pdf)* from the American Cancer Society, I developed an interactive dashboard to make complex cancer statistics more accessible. While the report presents detailed tables, my goal was to create a tool that enables users to explore cancer incidence, mortality, and survival outcomes across states, cancer types, and sexes.
 <img width="750" height="200" alt="Pasted Graphic" src="https://github.com/user-attachments/assets/b2d9b4be-8089-4240-8362-fae8735131fc" />
-==>
-<img width="999" height="799" alt="CANCER dashboard" src="https://github.com/user-attachments/assets/905b4ab3-32d4-4a77-b94f-3bf414cd7155" />
 
 ---
+### Tableau Dashboard
+<img width="1049" height="799" alt="CANCER dashboard (1)" src="https://github.com/user-attachments/assets/bd3b6d00-2fba-405e-9570-7c11e50f8bb0" />
 
 ### **Key Questions and Findings**
 
