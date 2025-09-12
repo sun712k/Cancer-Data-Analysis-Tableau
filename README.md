@@ -30,7 +30,7 @@ Using the *2025 Scorecard on State Health System Performance* (Commonwealth Fund
 * **Males:** Spearman ρ = **0.550**, p < 0.001 → moderate-to-strong correlation.
 * **Interpretation:** In states with poorer healthcare system performance (higher ranking score), MIR is higher. The association is stronger for females, suggesting female outcomes may be more sensitive to healthcare quality.
 
-  <img width="455" height="350" alt="image" src="https://github.com/user-attachments/assets/d85b1388-35b0-407f-bfc0-affdd04befd8" />
+<img width="455" height="350" alt="image" src="https://github.com/user-attachments/assets/d85b1388-35b0-407f-bfc0-affdd04befd8" />
 
 **5. Have 5-year survival rates improved consistently across cancer types?**
 Overall survival has improved substantially: a **41% relative increase** over recent decades. However, gains vary by cancer type.
