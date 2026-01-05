@@ -6,7 +6,7 @@ Inspired by *[Cancer Facts & Figures 2025](https://www.cancer.org/content/dam/ca
 
 ---
 ### Tableau Dashboard
-## [CLICK THIS](https://public.tableau.com/shared/XR9KZ27PY?:display_count=n&:origin=viz_share_link)
+## [CLICK THIS]([https://public.tableau.com/shared/XR9KZ27PY?:display_count=n&:origin=viz_share_link](https://github.com/user-attachments/assets/9bec2cee-1593-454c-8dda-c057e1082c44)](https://public.tableau.com/views/CancerIncidenceandSurvival/CANCERdashboard))
 
 [![Cancer DASHBOARD](https://github.com/user-attachments/assets/9bec2cee-1593-454c-8dda-c057e1082c44)](https://public.tableau.com/views/CancerIncidenceandSurvival/CANCERdashboard)
 
